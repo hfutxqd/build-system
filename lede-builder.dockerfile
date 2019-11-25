@@ -23,6 +23,8 @@ RUN git clone https://github.com/coolsnowwolf/lede
 
 RUN apt-get -y install wget curl
 
+WORKDIR /lede/lede
+
 RUN ./scripts/feeds update -a && ./scripts/feeds install -a
 
 RUN apt-get -y install vim
