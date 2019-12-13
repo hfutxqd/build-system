@@ -26,6 +26,7 @@ WORKDIR /lede/openwrt-leans
 
 RUN ./scripts/feeds update -a && ./scripts/feeds install -a
 
+RUN sed -i 's/# CONFIG_ALL .*/CONFIG_ALL=y/' .config
 RUN make defconfig && make download -j8
 
 # Cleanup
