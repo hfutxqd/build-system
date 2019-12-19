@@ -18,7 +18,7 @@ RUN apt-get update && \
     texinfo libglib2.0-dev xmlto qemu-utils \
     upx libelf-dev autoconf automake \
     libtool autopoint device-tree-compiler \
-    wget curl vim
+    wget curl vim uuid-runtime
 
 RUN git clone https://github.com/hfutxqd/openwrt-leans
 
