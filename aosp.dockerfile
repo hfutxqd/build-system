@@ -9,4 +9,5 @@ RUN apt-get update && \
  RUN curl https://storage.googleapis.com/git-repo-downloads/repo > /usr/bin/repo && \
      chmod a+x /usr/bin/repo
  ENV OUT_DIR_COMMON_BASE=/aosp_output
+ ENV USER=root
 
